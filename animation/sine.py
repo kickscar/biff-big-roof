@@ -11,7 +11,7 @@ def sine(i):
 X = np.linspace(0, 2*np.pi, 100)
 Y = np.sin(X)
 
-fig, ax = plt.subplots(1,1)
+fig, ax = plt.subplots(1, 1)
 ax.set_xlim([0, 2*np.pi])
 ax.set_ylim([-1.1, 1.1])
 
@@ -19,7 +19,7 @@ sinegraph, = ax.plot([], [])
 dot, = ax.plot([], [], 'o', color='red')
 
 
-anim = animation.FuncAnimation(fig, sine, frames=len(X), interval=50)
+# anim = animation.FuncAnimation(fig, sine, frames=len(X), interval=50)
 
 plt.grid()
 plt.show()
